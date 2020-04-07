@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fa515268-70b5-40f4-a8b0-d1a45a126564" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="SBT">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="projectTest" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="projectTest" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1ZMM2U9xdXrdUrZzSw80Wn21y86" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/GitHub/CSYE7200" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="sbt.project.settings.configurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Panda_Yixuan\IdeaProjects\projectTest" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Panda_Yixuan\IdeaProjects\projectTest\src\main\scala" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.DescriptNLP">
+    <configuration name="DataAnalysis" type="Application" factoryName="Application">
+      <envs>
+        <env name="HADOOP_HOME" value="C:\winutils" />
+        <env name="SPARK_LOCAL_HOSTNAME" value="localhost" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="DataAnalysis" />
+      <module name="projectTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataAnalysisClassification" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="DataAnalysisClassification" />
+      <module name="projectTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataAnalysisClassificationRF" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="DataAnalysisClassificationRF" />
+      <module name="projectTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataAnalysisRegression" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="DataAnalysisRegression" />
+      <module name="projectTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DescriptNLP" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="DescriptNLP" />
+      <module name="projectTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DescriptNLP" />
+        <item itemvalue="Application.DataAnalysisRegression" />
+        <item itemvalue="Application.DataAnalysisClassificationRF" />
+        <item itemvalue="Application.DataAnalysisClassification" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="projectTest" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="projecttest [file:/C:/Users/Panda_Yixuan/IdeaProjects/projectTest/]" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="projectTest-build" />
+                <option name="path" value="$PROJECT_DIR$/project" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="3170313414654" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="3097302829" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="1244562550" />
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$USER_HOME$/Desktop/play-samples-play-scala-hello-world-tutorial/play-samples-play-scala-hello-world-tutorial" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../CSYE7200" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../CSYE7200new" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fa515268-70b5-40f4-a8b0-d1a45a126564" name="Default Changelist" comment="" />
+      <created>1584644303016</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584644303016</updated>
+      <workItem from="1584644306214" duration="1344000" />
+      <workItem from="1584647176240" duration="357000" />
+      <workItem from="1584647561968" duration="156000" />
+      <workItem from="1584647754060" duration="223000" />
+      <workItem from="1584647999615" duration="710000" />
+      <workItem from="1584648733055" duration="19262000" />
+      <workItem from="1584797332659" duration="45267000" />
+      <workItem from="1585251834382" duration="5176000" />
+      <workItem from="1585332795404" duration="33247000" />
+      <workItem from="1585488822517" duration="10115000" />
+      <workItem from="1585507654004" duration="5780000" />
+      <workItem from="1585575549513" duration="17500000" />
+      <workItem from="1585667714026" duration="11090000" />
+      <workItem from="1585684297820" duration="15205000" />
+      <workItem from="1585750477986" duration="7150000" />
+      <workItem from="1585836499268" duration="10241000" />
+      <workItem from="1585859300256" duration="20608000" />
+      <workItem from="1585918673018" duration="15317000" />
+      <workItem from="1585938398906" duration="12758000" />
+      <workItem from="1586008664457" duration="17700000" />
+      <workItem from="1586097133963" duration="2388000" />
+      <workItem from="1586099542953" duration="15637000" />
+      <workItem from="1586122832082" duration="12122000" />
+      <workItem from="1586178443837" duration="11936000" />
+      <workItem from="1586196936325" duration="18354000" />
+      <workItem from="1586268699510" duration="706000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="505" y="174" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1586267681015">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="505" y="174" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1549.831@0.0.1549.831" timestamp="1586267681015" />
+    <state x="230" y="74" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585666917388">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="230" y="74" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1549.831@0.0.1549.831" timestamp="1585666917388" />
+    <state x="505" y="174" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1584644450386">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="505" y="174" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1549.831@0.0.1549.831" timestamp="1584644450386" />
+    <state x="510" y="180" key="EnvironmentVariablesDialog" timestamp="1584648954780">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="510" y="180" key="EnvironmentVariablesDialog/0.0.1549.831@0.0.1549.831" timestamp="1584648954780" />
+    <state x="555" y="174" key="FileChooserDialogImpl" timestamp="1586269404262">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="555" y="174" key="FileChooserDialogImpl/0.0.1549.831@0.0.1549.831" timestamp="1586269404262" />
+    <state width="1506" height="383" key="GridCell.Tab.0.bottom" timestamp="1586268431443">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state width="1506" height="383" key="GridCell.Tab.0.bottom/0.0.1549.831@0.0.1549.831" timestamp="1586268431443" />
+    <state width="1506" height="383" key="GridCell.Tab.0.center" timestamp="1586268431442">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state width="1506" height="383" key="GridCell.Tab.0.center/0.0.1549.831@0.0.1549.831" timestamp="1586268431442" />
+    <state width="1506" height="383" key="GridCell.Tab.0.left" timestamp="1586268431442">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state width="1506" height="383" key="GridCell.Tab.0.left/0.0.1549.831@0.0.1549.831" timestamp="1586268431442" />
+    <state width="1506" height="383" key="GridCell.Tab.0.right" timestamp="1586268431442">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state width="1506" height="383" key="GridCell.Tab.0.right/0.0.1549.831@0.0.1549.831" timestamp="1586268431442" />
+    <state width="1506" height="264" key="GridCell.Tab.1.bottom" timestamp="1586178106555">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state width="1506" height="264" key="GridCell.Tab.1.bottom/0.0.1549.831@0.0.1549.831" timestamp="1586178106555" />
+    <state width="1506" height="264" key="GridCell.Tab.1.center" timestamp="1586178106555">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state width="1506" height="264" key="GridCell.Tab.1.center/0.0.1549.831@0.0.1549.831" timestamp="1586178106555" />
+    <state width="1506" height="264" key="GridCell.Tab.1.left" timestamp="1586178106555">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state width="1506" height="264" key="GridCell.Tab.1.left/0.0.1549.831@0.0.1549.831" timestamp="1586178106555" />
+    <state width="1506" height="264" key="GridCell.Tab.1.right" timestamp="1586178106555">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state width="1506" height="264" key="GridCell.Tab.1.right/0.0.1549.831@0.0.1549.831" timestamp="1586178106555" />
+    <state x="198" y="44" width="1038" height="787" key="SettingsEditor" timestamp="1585667681222">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="198" y="44" width="1038" height="787" key="SettingsEditor/0.0.1549.831@0.0.1549.831" timestamp="1585667681222" />
+    <state x="480" y="244" key="com.intellij.ide.util.TipDialog" timestamp="1586268699703">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="480" y="244" key="com.intellij.ide.util.TipDialog/0.0.1549.831@0.0.1549.831" timestamp="1586268699703" />
+    <state x="179" y="143" key="new project wizard" timestamp="1584644913906">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="179" y="143" key="new project wizard/0.0.1549.831@0.0.1549.831" timestamp="1584644913906" />
+    <state x="432" y="189" key="run.anything.popup" timestamp="1586134480566">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="432" y="189" key="run.anything.popup/0.0.1549.831@0.0.1549.831" timestamp="1586134480566" />
+    <state x="437" y="152" width="672" height="678" key="search.everywhere.popup" timestamp="1585861008858">
+      <screen x="0" y="0" width="1549" height="831" />
+    </state>
+    <state x="437" y="152" width="672" height="678" key="search.everywhere.popup/0.0.1549.831@0.0.1549.831" timestamp="1585861008858" />
+  </component>
+</project>
