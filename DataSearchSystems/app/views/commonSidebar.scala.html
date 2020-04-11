@@ -1,0 +1,87 @@
+@()
+@defining(play.core.PlayVersion.current) { version =>
+  <aside id="sidebar-left" class="sidebar-left">
+
+    <div class="sidebar-header">
+      <div class="sidebar-title">
+        Navigation
+      </div>
+      <div class="sidebar-toggle hidden-xs" data-toggle-class="sidebar-left-collapsed" data-target="html" data-fire-event="sidebar-left-toggle">
+        <i class="fa fa-bars" aria-label="Toggle sidebar"></i>
+      </div>
+    </div>
+
+    <div class="nano">
+      <div class="nano-content">
+        <nav id="menu" class="nav-main" role="navigation">
+          <ul class="nav nav-main">
+            <li>
+              <a href="@routes.HomeController.dashboard()">
+
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+
+            <li class="nav-parent nav-expanded nav-active">
+              <a>
+                <i class="fa fa-list-alt" aria-hidden="true"></i>
+                <span>Forms</span>
+              </a>
+              <ul class="nav nav-children">
+
+                <li class="nav-active">
+                  <a href="@routes.HomeController.datasearch()">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <span>Find history Info</span>
+                  </a>
+
+                </li>
+                <li class="nav-active">
+                  <a href="@routes.HomeController.nlpSearch()">
+                    <i class="fa fa-list-alt" aria-hidden="true"></i>
+                    <span>Find NLP Prediction</span>
+
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-parent">
+              <a href="@routes.HomeController.downloadCsv()">
+                <i class="fa fa-table" aria-hidden="true"></i>
+                <span>Tables</span>
+              </a>
+              <ul class="nav nav-children">
+                <li>
+                  <a href="tables-basic.html">
+                    Basic
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+
+          </ul>
+        </nav>
+
+        <hr class="separator" />
+
+        <div class="sidebar-widget widget-tasks">
+          <div class="widget-header">
+
+          </div>
+          <div class="widget-content">
+
+          </div>
+        </div>
+
+        <hr class="separator" />
+
+
+      </div>
+
+    </div>
+
+  </aside>
+}

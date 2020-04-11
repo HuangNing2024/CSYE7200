@@ -1,0 +1,178 @@
+@(results: List[List[String]])
+
+@main("DefineMap") {
+  @defining(play.core.PlayVersion.current) { version =>
+  <!doctype html>
+      <html class="fixed sidebar-left-collapsed">
+          <head>
+                  <!-- Basic -->
+              <meta charset="UTF-8">
+              <title>Map Builder | Okler Themes | Porto-Admin</title>
+              <meta name="keywords" content="HTML5 Admin Template" />
+              <meta name="description" content="Porto Admin - Responsive HTML5 Template">
+              <meta name="author" content="okler.net">
+                  <!-- Mobile Metas -->
+              <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+                  <!-- Web Fonts  -->
+              <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+                  <!-- Vendor CSS -->
+              <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css" />
+              <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.css" />
+              <link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.css" />
+              <link rel="stylesheet" href="assets/vendor/bootstrap-datepicker/css/datepicker3.css" />
+                  <!-- Specific Page Vendor CSS -->
+              <link rel="stylesheet" href="assets/vendor/select2/select2.css" />
+                  <!-- Theme CSS -->
+              <link rel="stylesheet" href="assets/stylesheets/theme.css" />
+                  <!-- Skin CSS -->
+              <link rel="stylesheet" href="assets/stylesheets/skins/default.css" />
+                  <!-- Theme Custom CSS -->
+              <link rel="stylesheet" href="assets/stylesheets/theme-custom.css">
+                  <!-- Head Libs -->
+              <script src="assets/vendor/modernizr/modernizr.js"></script>
+              <link rel="stylesheet" href="https://unpkg.com/leaflet@@1.6.0/dist/leaflet.css"
+              integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+              crossorigin=""/>
+              <script src="https://unpkg.com/leaflet@@1.6.0/dist/leaflet.js"
+              integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+              crossorigin=""></script>
+
+          </head>
+          <body>
+              <section class="body">
+                      <!-- start: header -->
+                  <header>@cusCommonSidebar()</header>
+                      <!-- end: header -->
+
+                  <div class="inner-wrapper">
+                          <!-- start: sidebar -->
+                      @commonSidebar()
+                          <!-- end: sidebar -->
+
+                      <section role="main" class="content-body">
+                          <header class="page-header">
+                              <h2>Map Builder</h2>
+
+                              <div class="right-wrapper pull-right">
+                                  <ol class="breadcrumbs">
+                                      <li>
+                                          <a href="index.html">
+                                              <i class="fa fa-home"></i>
+                                          </a>
+                                      </li>
+                                      <li><span>Maps</span></li>
+                                      <li><span>Builder</span></li>
+                                  </ol>
+
+                                  <a class="sidebar-right-toggle" data-open="sidebar-right"><i class="fa fa-chevron-left"></i></a>
+                              </div>
+                          </header>
+
+                              <!-- start: page -->
+                          <section class="content-with-menu" data-theme-gmap-builder>
+                              <div class="content-with-menu-container">
+                                  <menu id="content-menu" class="inner-menu" role="menu">
+                                      <div class="nano">
+                                          <div class="nano-content">
+                                              <div class="inner-menu-content">
+                                                  <hr class="separator" />
+
+                                                  <p class="title">Map Center</p>
+
+                                                  <div class="form-group">
+                                                      <div class="row">
+                                                          <label class="col-xs-12 control-label" for="latitude">Year</label>
+                                                          <div class="col-xs-12">
+                                                              <input value = "@results(0)(9)" id="latitude" name="latitude" class="form-control" type="text" data-builder-field="latlng">
+                                                          </div>
+                                                      </div>
+                                                  </div>
+
+                                                  <div class="form-group">
+                                                      <div class="row">
+                                                          <label class="col-xs-12 control-label" for="longitude">Month</label>
+                                                          <div class="col-xs-12">
+                                                              <input id="longitude"  value = "@results(0)(8)" name="longitude" class="form-control" type="text" data-builder-field="latlng">
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                  <hr class="separator" />
+
+                                                  <hr class="separator" />
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </menu>
+                                  <div class="inner-body">
+                                      <div id="gmap"></div>
+                                  </div>
+                              </div>
+                          </section>
+                              <!-- end: page -->
+                      </section>
+                  </div>
+
+              </section>
+
+                  <!-- Vendor -->
+              <script src="assets/vendor/jquery/jquery.js"></script>
+              <script src="assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
+              <script src="assets/vendor/bootstrap/js/bootstrap.js"></script>
+              <script src="assets/vendor/nanoscroller/nanoscroller.js"></script>
+              <script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+              <script src="assets/vendor/magnific-popup/magnific-popup.js"></script>
+              <script src="assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
+
+                  <!-- Specific Page Vendor -->
+              <script src="assets/vendor/select2/select2.js"></script>
+@*              <script src="http://maps.google.com/maps/api/js?sensor=false"></script>*@
+              <script src="assets/javascripts/maps/snazzy.themes.js"></script>
+
+                  <!-- Theme Base, Components and Settings -->
+              <script src="assets/javascripts/theme.js"></script>
+
+                  <!-- Theme Custom -->
+              <script src="assets/javascripts/theme.custom.js"></script>
+
+                  <!-- Theme Initialization Files -->
+              <script src="assets/javascripts/theme.init.js"></script>
+              <script type="text/javascript">
+                      let r = window.location.search.substr(1);
+                      console.log(r);
+                      let mymap = L.map('gmap').setView([37.7749,-122.4194], 13);
+                      L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+                          attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery ? <a href="https://www.mapbox.com/">Mapbox</a>',
+                          maxZoom: 18,
+                          id: 'mapbox/streets-v11',
+                          accessToken: 'pk.eyJ1IjoidGlhbmp1IiwiYSI6ImNrM3Q4cmU4cjAwYm4za25rbGU2a3JicHcifQ.oyS4Lf8QqdXFb9MQ2VlWYQ'
+                      }).addTo(mymap);
+
+
+                      let marker;
+                      @for(result <- results) {
+                      marker = L.marker([@result(6),@result(5)]).addTo(mymap);
+                      marker.bindPopup("<b>Offense Type:" + "@result(3)"
+                              + "</b><br>Occurred Date:" + "@result(2)"
+                              + "<br>Street:" + "@result(13)").openPopup();
+                      }
+
+                      // console.log(mockData.length, mockData[0])
+                      //     let marker = new Array(mockData.length)
+                      // for(let i = 0; i < mockData.length; i++){
+                      //     marker[i] = L.marker([mockData[i].Lat, mockData[i].Long]).addTo(mymap)
+                      //     marker[i].bindPopup("<b>Offense Type:" + mockData[i].OFFENSE_CODE_GROUP
+                      //             + "</b><br>Occurred Date:" + mockData[i].OCCURRED_ON_DATE
+                      //             + "<br>Street:" + mockData[i].STREET).openPopup();
+                      // }
+
+              </script>
+
+                  <!-- Examples -->
+@*              <script src="assets/javascripts/maps/examples.map.builder.js"></script>*@
+          </body>
+      </html>
+
+  }
+}
+
+
