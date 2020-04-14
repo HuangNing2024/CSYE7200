@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0mD:\NingHuang\Spring2020\csye7200\FinalProject\HNTest\play-samples-play-scala-hello-world-tutorial\app\controllers\HomeController.scala:6:8: object Play is not a member of package play[0m
+[0m[[0m[31merror[0m] [0m[0mimport play.Play[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0mD:\NingHuang\Spring2020\csye7200\FinalProject\HNTest\play-samples-play-scala-hello-world-tutorial\app\controllers\HomeController.scala:64:36: no arguments allowed for nullary method apply: ()play.twirl.api.HtmlFormat.Appendable in object dataSearchResult[0m
+[0m[[0m[31merror[0m] [0m[0m    Ok(views.html.dataSearchResult(resultList))[0m
+[0m[[0m[31merror[0m] [0m[0m                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
