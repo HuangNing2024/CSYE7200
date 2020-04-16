@@ -7,13 +7,41 @@
 
 ## Part I: Data Analysis & Machine Learning Algorithm
 
+### **Introduction**
+
+#### **Source Code**
+
+This includes 2 models' codes:
+
+1. Random Forest Model for Crime Category(new category after reclassifying) Classification.
+2. Logistic Regression using TF-IDF Features for Crime Description Classification (Multi-class text classification).
+   
+Also includes 2 Util codes:
+1. General Data Process source code.
+2. Generating the dataset for supporting the function of map data searching in the Data Searching Systems.
+   
+And one Unit test code.
+
+#### **Source Data**
+
+- train.csv: Dataset for training models
+- test.csv: Dataset for using models to make predictions and evaluate models' performance
+- weather.csv: Dataset with weather information
+- sunsetrise.csv: Dataset with sunset time and sunrise time information
+- data_reclassify.csv: Complete dataset with new crime category
+
+#### **Output Data**
+
+- searchingData.csv: Data to support the map data searching function in the Data Searching Systems.
+- nlp_result.csv: Output data of Logistic Regression Model, to support the Crime Description matching function in the Data Searching Systems.
+- classification_result.csv: Output data of Random Forest Model, can be shown partially and downloaded in the Data Searching Systems.
 
 
 ## Part II: Data Searching Systems
 
 ### **Introduction**
 
-This includes five parts
+This part includes five parts:
 
 1. Data Display: Via machine learning algorithms and Spark, we use histogram and pie chart to show research results.
 
