@@ -1,5 +1,0 @@
-[warn] insecure HTTP request is deprecated 'http://dl.bintray.com/spark-packages/maven'; switch to HTTPS or opt-in as ("Spark Packages Repo" at "http://dl.bintray.com/spark-packages/maven").withAllowInsecureProtocol(true)
-[debug] "not up to date. inChanged = true, force = false
-[debug] Updating ProjectRef(uri("file:/D:/NingHuang/Spring2020/csye7200/FinalProject/final/CSYE7200/"), "csye7200")...
-[debug] Done updating ProjectRef(uri("file:/D:/NingHuang/Spring2020/csye7200/FinalProject/final/CSYE7200/"), "csye7200")
-[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
