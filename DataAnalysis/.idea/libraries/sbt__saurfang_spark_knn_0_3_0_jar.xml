@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="sbt: saurfang:spark-knn:0.3.0:jar">
-    <CLASSES>
-      <root url="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/http/dl.bintray.com/spark-packages/maven/saurfang/spark-knn/0.3.0/spark-knn-0.3.0.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
