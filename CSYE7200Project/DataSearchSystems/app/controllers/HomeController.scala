@@ -49,8 +49,7 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
     Ok(views.html.dataSearch(BasicForm.form))
   }
   def downloadCsv() = Action { implicit request: Request[AnyContent] =>
-    val bufferedSource = Source.fromFile("D:/NingHuang/Spring2020/csye7200/FinalProject/HNTest/DataSearchSystems/app/controllers/classification_result.csv")
-
+    val bufferedSource = Source.fromFile("D:/NingHuang/Spring2020/csye7200/SecondProject/MachineLearning/classification_result.csv")
     var resultList: List[List[String]] = List()
 
     for (line <- bufferedSource.getLines.take(51)) {
@@ -73,28 +72,23 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
 
     }
     resultList = resultList.tail
-    println("^^^^^"+resultList.last.size)
     Ok(views.html.categoryMapping(resultList))
 
   }
 
   def downloadResult =Action{ implicit request: Request[AnyContent] =>
     Ok.sendFile(new java.io.File(
-      "D:/NingHuang/Spring2020/csye7200/FinalProject/HNTest/DataSearchSystems/app/controllers/classification_result.csv"))
+      "D:/NingHuang/Spring2020/csye7200/SecondProject/MachineLearning/classification_result.csv"))
   }
   def nlpSearch() = Action{ implicit request: Request[AnyContent] =>
-    println("!!!!!!!");
     Ok(views.html.dataSearchNLP(NLPForm.form));
   }
 
   def simpleFormPost() = Action { implicit request: Request[AnyContent] =>
     val formData: NLPForm = NLPForm.form.bindFromRequest.get // Careful: BasicForm.form.bindFromRequest returns an Option
-    //Ok(views.html.result(formData.month, formData.day, formData.year, formData.street, formData.ty)) // just returning the data because it's an example :
-    //var resultList = getSearchResult(formData);
-    println(formData.Description);
+
     var res = getSearchResult(formData)
     if(res.equals("")) res = "No Such Type"
-    println("****" +res)
     Ok(views.html.dataSearchNLPResult(res))
   }
   def simpleFormPost2() = Action { implicit request: Request[AnyContent] =>
@@ -109,13 +103,7 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
         var resultList: List[List[String]] = List()
 
         resultList = test(formData)
-//        if(resultList.size==0){
-//
-//        }
-//        else{
           Ok(views.html.cssmap(resultList))
-//        }
-
       }
     )
 
@@ -131,9 +119,7 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
   }
 
   def test(formdata : BasicForm):List[List[String]] ={
-    //D:\NingHuang\Spring2020\csye7200\FinalProject\HNTest\DataSearchSystems\app\controllers
-    var bufferedSource = Source.fromFile("D:/NingHuang/Spring2020/csye7200/FinalProject/HNTest/DataSearchSystems/app/controllers/data1.csv")
-    // var bufferedSource = Source.fromFile("/Users/saigou/Downloads/data.csv")
+    var bufferedSource = Source.fromFile("D:/NingHuang/Spring2020/csye7200/SecondProject/MachineLearning/searchingData.csv")
     var resultList: List[List[String]] = List()
     for (line <- bufferedSource.getLines()) {
 
@@ -148,9 +134,7 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
   }
 
   def getLocationSearchResult(formdata : BasicForm):List[List[String]] ={
-    //D:\NingHuang\Spring2020\csye7200\FinalProject\HNTest\DataSearchSystems\app\controllers
     var bufferedSource = Source.fromFile("D:/NingHuang/Spring2020/csye7200/FinalProject/HNTest/DataSearchSystems/app/controllers/data.csv")
-    // var bufferedSource = Source.fromFile("/Users/saigou/Downloads/data.csv")
 
     var resultList: List[List[String]] = List()
     for (line <- bufferedSource.getLines()) {
@@ -167,7 +151,6 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
         val cols = line.split(",")
         resultList = resultList :+ cols.toList
       }
-      //resultList=resultList.tail
     }
 
     resultList;
@@ -175,17 +158,13 @@ class HomeController @Inject()(cc: ControllerComponents) extends AbstractControl
 
   def getSearchResult(formdata : NLPForm): String ={
     var bufferedSource = Source.fromFile("D:/NingHuang/Spring2020/csye7200/FinalProject/HNTest/DataSearchSystems/app/controllers/nlp_result.csv")
-    // var bufferedSource = Source.fromFile("/Users/saigou/Downloads/data.csv")
-
     var pattern = formdata.Description.toUpperCase
     var res = new String
     for (line <- bufferedSource.getLines()) {
 
       var cols: Array[String] = line.split(",");
-      //println("%%%    " + cols(0));
       if (cols(0).contains(pattern)) {
          res = cols.last
-        println("in this")
       }
     }
      res;
