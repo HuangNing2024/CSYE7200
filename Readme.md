@@ -29,6 +29,7 @@ And one Unit test code.
 - weather.csv: Dataset with weather information
 - sunsetrise.csv: Dataset with sunset time and sunrise time information
 - data_reclassify.csv: Complete dataset with new crime category
+You should down load dataset from [https://drive.google.com/drive/folders/1D_-ogcVV5lH1a15lkc1Zz1nmVgGyJVX1?usp=sharing]
 
 #### **Output Data**
 
@@ -43,15 +44,15 @@ And one Unit test code.
 
 This part includes five parts:
 
-1. Data Display: Via machine learning algorithms and Spark, we use histogram and pie chart to show research results.
+1. Data Visualization: Via machine learning algorithms and Spark, we made some sample histogram and pie charts to show data analysis results.
 
-2. Data Searching: Users can input some restriction to get history information and these will be displayed through map with marker presenting the crime occurrence date, street, weather and type
+2. Data Searching: Users can input some condition to get historical crime records and these information will be displayed through map with marker presenting the crime occurrence date, street, weather and crime type.
 
-3. Crime Type Search: This function is developed for police man. When residence call 911, they will provide some crime description. So this can help police man to know the criminal type immediately, which can help them to prepare well.
+3. Crime Type Match: This function is developed for police man. When resident call 911, they will provide some crime description. So this can help policeman to know the criminal type immediately, which can help them to prepare well.
 
-4. Csv Displaying: This part is mainly for display our prediction results, and user can download CSV file to get more information.
+4. Csv file Displaying: This part is mainly for displaying our prediction/ classification results, and user can download CSV file to get more information.
 
-5. Crime Type Mapping: The original datasets in the Kaggle have 39 crime types which make prediction rates very low. So we map the old crime type  to new type depending the official guidance attached by the footer of websites.
+5. Crime Type Mapping: The original datasets in the Kaggle have 39 crime types which make prediction badly performed. So we map the old crime type  to new type depending the official guidance attached by the footer of the website.
 
    
 
